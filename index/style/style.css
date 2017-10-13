@@ -1,0 +1,136 @@
+a, a:active, a:visited, a:focus {
+    color: rgb(253, 234, 206);
+}
+
+.about {
+    color: rgb(253, 234, 206);
+    font-family: Centaur;
+    float: left;
+}
+
+.about2 {
+    color: rgb(161, 144, 58) !important;
+    font-family: Centaur;
+}
+
+body {
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+.center {
+    text-align: center;
+}
+.container img {
+    width: 150px;
+    height: 200px;
+    border: 3px solid rgb(253, 234, 206);
+    object-fit: cover;
+}
+
+.credits {
+    color: rgb(196, 179, 83);
+    font-family: Centaur;
+    font-size: 25px;
+    text-align: center;
+    transform: rotate(-3.9deg);
+    filter: blur(0.4px);
+}
+
+.credits2 {
+    color: rgb(161, 144, 58);
+    font-family: Centaur;
+    font-size: 40px;
+    text-align: center;
+    transform: rotate(-3.9deg);
+    filter: blur(0.4px);
+}
+
+h1 {
+    Color: rgb(253, 234, 206);
+    font-family: Centaur;
+    text-align:center;
+    font-size:60px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: rgb(253, 234, 206);
+    font-family: Centaur;
+    text-align:center;
+    position: relative;
+    margin: 10px 20px;
+    font-size: 40px;
+}
+
+h3 {
+    Color: rgb(253, 234, 206);
+    font-family: Centaur;
+    text-align:center;
+    font-size:40px;
+    margin-bottom: 0px;
+}
+
+.imageText {
+    font-size: 25px;
+    font-family: Centaur;
+    Color: rgb(253, 234, 206);
+}
+
+.left {
+    text-align: left;
+}
+
+.menu {
+    top: 0;
+    right: 0;
+    position: fixed;
+    text-align: right;
+    z-index: 99999; /*Sätter ett högt värde så att denna klassen hamnar överst. Fick annars problem med överlappningen.*/
+}
+
+p{
+    color: rgb(253, 234, 206);
+    font-family: Centaur;
+    font-size: 20px;
+    text-align:center;
+    margin-right: 80px;
+    margin-left: 80px;
+    position: relative;
+    bottom: 35px;
+}
+
+.page1 {
+    background: url('img/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+    margin: 5px;
+}
+
+.page2 {
+    background: url('img/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.position {
+    color: rgb(161, 144, 58);
+    font-family: Centaur;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 40px;
+    transform: rotate(-3.9deg);
+    filter: blur(0.4px);
+}
+
+table a:active, table a:visited, table a:focus {
+    color: transparent;
+}
+
+table td {
+    padding: 5px;
+}
+
