@@ -3,13 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lord Of The Rings</title>
-    <link rel="stylesheet" type="text/css" href="style/Style.css">
+    <title>Testpage</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
 </head>
 
+
 <body class="page1">
+
     <section id="top">
+        
+        <div class="fadePage">
+            <div class="centerTrailer">
+                <div class="trailer">
+                    <a href="javascript:void(0);" class="closeButton" onclick="closeTrailer();">close</a>
+                    <!-- gör att när man klickar på länken så går vi ingen stans/ onclick gör ett metodanrop till closeTrailer funktionen-->
+                    <iframe id="iframe" frameborder="0"></iframe> <!-- iframe är ett sätt man kan länka in t ex en annan sida eller video osv-->
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="about">
             <a href="about.html">About the creators</a>
         </div>
@@ -41,8 +56,10 @@
         of the North, and Boromir, a Captain of Gondor; Gimli son of Glóin, a Dwarf warrior; Legolas Greenleaf, an Elven
         prince; and Gandalf, a Wizard.</p>
     <section id="characters">
-
-        <h2 class="left">Characters</h2>
+        
+        <h4><a href="javascript:void(0);" onclick="openTrailer();">View Trailer</a></h4>
+        <!-- gör att när man klickar på länken så går vi ingenstans/ onclick gör ett metodanrop till closeTrailer funktionen-->
+        <h2 class="left shrinkLeft">Characters</h2>
         <br/>
         <br/>
         <table>
@@ -199,6 +216,23 @@
     </div>
     <section id="map">
     </section>
+
+    <script>
+
+        function openTrailer() {
+            document.querySelector('.fadePage').style.display = 'block'; // hämtar klassen fadePage och sätter den tikll att vara synlig
+            document.getElementById('iframe').src = "style/video/trailer.mp4"; // sätter att iframen ska visa videon
+            document.querySelector('body').style.overflow = 'hidden'; // gör att skrollen försvinner
+
+        }
+
+        function closeTrailer() {
+            document.querySelector('.fadePage').style.display = 'none';
+            document.getElementById('iframe').src = "about:blank"; // Plockar bort videon från iframen
+            document.querySelector('body').style.overflow = 'auto'; // Sätter tillbaka skrollen
+        }
+
+    </script>
 
 </body>
 
